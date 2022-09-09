@@ -1,0 +1,53 @@
+<main class="container">
+    <div class="color-card"></div>
+
+    Somos un grupo de estudiantes orientados en la transformación de una educación
+    superior crítica, libre e
+    igualitaria.
+    <p class="color-number">#Sumate</p>
+
+    <img class="imag" src="equipo.png" style="display: block;margin-right: auto;margin-left: auto;">
+    <button id="button"></button>
+</main>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script>
+    var tiempo = 1000;
+    // intervalo
+    var interval = setInterval(function () {
+        $('#button').trigger('click');
+    }, tiempo);
+
+    // eventos click de las etiquetas <a>
+    $('#button').click(function () {
+
+    });
+
+    let identificadorTiempoDeEspera;
+
+    function temporizadorDeRetraso() {
+        identificadorTiempoDeEspera = setTimeout(setBackgrount, 1000);
+    }
+
+    const button = document.getElementById("button");
+    const body = document.querySelector("body");
+    const colorCard = document.querySelector(".color-number");
+
+    const generateRandomColor = () => {
+        const r = Math.floor(Math.random() * 256);
+        const g = Math.floor(Math.random() * 256);
+        const b = Math.floor(Math.random() * 256);
+
+        const rbgColor = `rgb(${r},${g},${b})`;
+        return rbgColor;
+    };
+
+    const setBackgrount = () => {
+        const newColor = generateRandomColor();
+        console.log(newColor);
+        colorCard.style.color = newColor;
+    };
+
+    button.addEventListener("click", setBackgrount);
+</script>
