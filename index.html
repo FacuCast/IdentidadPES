@@ -120,33 +120,69 @@
             width: 95%;
         }
 
-        .evento ul,
-        .inscripcion ul {
-            list-style: none;
-            display: flex;
-            padding: 0px;
-            flex-wrap: wrap;
+        @media screen and (min-width: 1010px) {
+
+            .evento ul,
+            .inscripcion ul {
+                list-style: none;
+                display: flex;
+                padding: 0px;
+                flex-wrap: wrap;
+            }
+
+            .evento ul li,
+            .inscripcion ul li {
+                margin: 1%;
+            }
+
+            .evento ul li img,
+            .inscripcion ul li img {
+                height: 45vw;
+            }
+
+
+            .redes {
+                display: flex;
+
+                flex-wrap: wrap;
+            }
+
+            .redes li {
+                padding: 4%;
+            }
         }
 
-        .evento ul li,
-        .inscripcion ul li {
-            margin: 1%;
-        }
+        @media screen and (max-width: 1000px) {
 
-        .evento ul li img,
-        .inscripcion ul li img {
-            height: 45vw;
-        }
+            .evento ul,
+            .inscripcion ul {
+                list-style: none;
+                display: flex;
+                padding: 0px;
+                flex-wrap: wrap;
+            }
+
+            .evento ul li,
+            .inscripcion ul li {
+                margin: 1%;
+            }
+
+            .evento ul li img,
+            .inscripcion ul li img {
+                width: 99%;
+            }
 
 
-        .redes {
-            display: flex;
+            .redes {
+                display: flex;
 
-            flex-wrap: wrap;
-        }
+                flex-wrap: wrap;
+            }
 
-        .redes li {
-            padding: 4%;
+            .redes li {
+                padding: 4%;
+            }
+
         }
     </style>
 
