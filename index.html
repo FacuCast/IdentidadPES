@@ -170,18 +170,19 @@
             <hr>
         </ul>
 
+
         <ul class="redes">
             <li>
-                <a onclick="ocultar()" target="_blank" href="https://www.facebook.com/IdentidadPES"><img src="facebook.png"></a>
+                <a onclick="abrirF();"><img src="facebook.png"></a>
             </li>
             <li>
-                <a onclick="ocultar()" target="_blank" href="https://www.instagram.com/identidad.pes/?hl=es-la"><img src="instagram.png"></a>
+                <a onclick="abrirI();"><img src="instagram.png"></a>
             </li>
             <li>
-                <a onclick="ocultar()" target="_blank" href="https://twitter.com/IdentidadPes"><img src="twitter.png"></a>
+                <a onclick="abrirT();"><img src="twitter.png"></a>
             </li>
             <li>
-                <a onclick="ocultar()" target="_blank" href="#"><img src="whatsapp.png"></a>
+                <img src="whatsapp.png"></a>
             </li>
         </ul>
     </div>
@@ -239,7 +240,24 @@
             window.location.href = window.location.href;
         }
     </script>
-
+    <script>
+        function abrirT() {
+            window.open("https://twitter.com/IdentidadPes", '_blank');
+            location.reload();
+        }
+        function abrirF() {
+            window.open("https://www.facebook.com/IdentidadPES", '_blank');
+            location.reload();
+        }
+        //function abrirW() {
+        //window.open("#");<a onclick="abrirW();">*/
+        //  location.reload();
+        //}
+        function abrirI() {
+            window.open("https://www.instagram.com/identidad.pes/?hl=es-la", '_blank');
+            location.reload();
+        }
+    </script>
 </body>
 
 </html>
